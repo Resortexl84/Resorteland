@@ -23,6 +23,48 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.pelisalacarta"
+    name="pelisalacarta"
+    version="3.2.74"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Películas y series a la carta</summary>
+    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano, Inglés y Rumano.</description>
+    <summary lang="en">Movies and TV Shows on demand</summary>
+    <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian, English and Romanian.</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="library_service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="3.3.21"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">Watch on demand spanish TV from your media center</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
+  </extension>
+</addon>
+
 <addon id="plugin.video.youtube" name="YouTube" version="5.1.9" provider-name="bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -60,7 +102,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.kal-el" name="Resorteland Repo" version="1.0.0" provider-name="Resorte XL">
+<addon id="repository.kal-el" name="Resorteland Repo" version="1.0.1" provider-name="Resorte XL">
 	<extension point="xbmc.addon.repository" name="Resorteland official Repo">
 		<info compressed="false">https://raw.github.com/Resortexl84/Resorteland/master/addons.xml</info>
 		<checksum>https://raw.github.com/Resortexl84/Resorteland/master/addons.xml.md5</checksum>
